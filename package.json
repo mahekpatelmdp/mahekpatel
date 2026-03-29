@@ -2,7 +2,6 @@
   "name": "mahekpatel-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mahekpatelmdp.github.io/mahekpatel",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.17.0",

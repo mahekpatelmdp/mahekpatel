@@ -22,8 +22,8 @@ const HeroBanner = () => {
           </span>
         </div>
         <div className="hero-links-wrapper mt-4 flex justify-center gap-6">
-          <Link to="/projects" className="hero-link underline text-base text-blue-700 hover:text-blue-900 transition-colors">My Work</Link>
-          <Link to="/about" className="hero-link underline text-base text-blue-700 hover:text-blue-900 transition-colors">About Me</Link>
+          {/* <Link to="/projects" className="hero-link underline text-base text-blue-700 hover:text-blue-900 transition-colors">My Work</Link>
+          <Link to="/about" className="hero-link underline text-base text-blue-700 hover:text-blue-900 transition-colors">About Me</Link> */}
         </div>
       </div>
       <div className="hero-image-wrapper">

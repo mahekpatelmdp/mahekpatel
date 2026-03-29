@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact - Dhruvil Portfolio</title>
+        <title>Contact - Mahek Portfolio</title>
       </Helmet>
       <ContactForm />
     </>
