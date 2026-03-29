@@ -1,0 +1,72 @@
+.projects-wrapper {
+  padding: 2rem; /* Add padding around the projects section */
+}
+
+.project-card {
+  background-color: #fff; /* Set a white background for contrast */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1.5rem; /* Add padding inside the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.project-card h3 {
+  font-size: 1.5rem; /* Increase font size for the title */
+  margin-bottom: 0.5rem; /* Space below the title */
+}
+
+.project-card p {
+  font-size: 1rem; /* Set a comfortable font size for descriptions */
+  line-height: 1.6; /* Improve line spacing for readability */
+  color: #555; /* Use a slightly darker color for text */
+}
+
+.project-link {
+  display: block;
+  color: #007bff; /* Primary link color */
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold; /* Make the link text bold */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.project-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+  text-decoration: underline; /* Underline effect */
+}
+
+@media (min-width: 768px) {
+  .projects-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .projects-wrapper .project-card {
+    flex: 0 0 30%; /* Keep this for responsive behavior */
+    max-width: 300px; /* Optional: Set a max width */
+  }
+
+  .projects-introduction p {
+    width: 80%; /* Adjust the width for better alignment */
+    margin: 1.5rem auto; /* Center and space the intro paragraph */
+  }
+}
+
+.projects-page-wrapper {
+  padding: 2.5rem; /* Adjust padding if needed */
+}
+
+.projects-introduction {
+  text-align: center;
+}
+
+.project-card:last-child {
+  margin-bottom: 0; /* Remove margin from the last card if needed */
+}

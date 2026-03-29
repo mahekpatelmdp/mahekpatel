@@ -1,0 +1,17 @@
+.timeline {
+    border-left: 1px solid black;
+    min-width: 300px;
+}
+
+.timeline::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: var(--secondary);
+    border-radius: 100%;
+    left: -8px;
+}
+
+
+  
