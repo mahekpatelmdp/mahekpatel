@@ -5,7 +5,7 @@ const Homepage = () => {
   return (
     <>
       <Helmet>
-        <title>Home - Dhruvil Portfolio</title>
+        <title>Home - Mahek Portfolio</title>
       </Helmet>
       <HeroBanner />
     </>

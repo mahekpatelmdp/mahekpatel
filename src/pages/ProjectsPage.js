@@ -5,7 +5,7 @@ const ProjectsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Projects - Dhruvil Portfolio</title>
+        <title>Projects - Mahek Portfolio</title>
       </Helmet>
       <Projects />
     </>
