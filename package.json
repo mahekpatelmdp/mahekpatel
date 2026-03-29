@@ -2,7 +2,7 @@
   "name": "mahekpatel-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mahekpatelmdp.github.io/mahekpatelmdp",
+  "homepage": "https://mahekpatelmdp.github.io/mahekpatel",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -19,9 +19,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "start": "vite",
-    "build": "vite build"
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
