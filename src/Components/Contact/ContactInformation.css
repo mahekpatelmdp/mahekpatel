@@ -1,0 +1,16 @@
+.contact-information-wrapper span {
+    font-size: 19px;
+    display: block;
+}
+
+.contact-information-wrapper .contact-info svg {
+    display: inline-block;
+    color: var(--secondary);
+}
+
+@media (min-width: 768px) {
+    .contact-information-wrapper span {
+        font-size: 25px;
+        display: block;
+    }
+}

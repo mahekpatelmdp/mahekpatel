@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --primary: #22223b; /* Professional dark blue */
+    --secondary: #4a4e69; /* Muted blue-gray */
+    --accent: #9a8c98; /* Subtle accent */
+    --background: #f8f9fa; /* Light neutral background */
+}
+
+html {
+    scroll-behavior:smooth
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+html, body, .main, #root {
+    min-height: 100vh;
+} 
+
+body {
+    font-family:  'Lato', sans-serif;
+    background: var(--background);
+}
+
+.button {
+    padding: 15px;
+    color: #fff;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    text-align: center;
+    transition: background 0.3s ease-in;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 8px 0 #e0e0e0;
+}
+
+.button:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.button:hover:not([disabled]) {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.loading-wrapper {
+    display: flex;
+    position: fixed;
+    /* width: 100%; */
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 9999;   
+}
+
+textarea.field-error {
+    border-color: red;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding: 10px;
+    min-height: 200px;
+    outline: none;
+}
+
+textarea:focus {
+    border: 1px solid var(--secondary);
+}

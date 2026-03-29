@@ -1,0 +1,14 @@
+footer {
+    width: 100%;
+    background-color: var(--secondary);
+    text-align: center;
+    position: relative;
+    padding: 6px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding: 10px;
+    }
+}

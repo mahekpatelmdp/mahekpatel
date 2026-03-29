@@ -1,0 +1,14 @@
+.socials {
+    text-align: center;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+.socials a:hover {
+    color: var(--primary);
+}

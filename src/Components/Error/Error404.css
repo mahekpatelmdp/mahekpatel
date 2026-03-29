@@ -1,0 +1,18 @@
+.error-page-wrapper {
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.error-404-title {
+    font-size: 100px;
+}
+
+@media (min-width: 768px) {
+    .error-404-title {
+        font-size: 200px;
+    }
+
+    .error-404-contents {
+        font-size: 30px;
+    }
+}
