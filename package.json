@@ -1,7 +1,8 @@
 {
-  "name": "mahekpatel-portfolio",
+  "name": "mahekpatelmdp.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mahekpatelmdp.github.io/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.17.0",
