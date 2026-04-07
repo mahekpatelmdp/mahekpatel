@@ -6,6 +6,7 @@ const NavItems = (props) => {
     (props.modalNavigation
       ? 'mobile-navigation flex-col m-auto'
       : 'desktop-navigation');
+
   return (
     <nav className={navigationItemsClasses}>
 
@@ -24,6 +25,10 @@ const NavItems = (props) => {
         name="About"
         link="/about"
       />
+
+      {/* Icons inline (same row) */}
+   
+
     </nav>
   );
 };
