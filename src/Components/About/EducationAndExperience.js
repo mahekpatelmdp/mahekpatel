@@ -43,7 +43,7 @@ const EducationAndExperience = () => {
         <div className="education fade-in" ref={educationRef}>
           <h1 className="text-3xl mb-5 text-center">
             <LuGraduationCap className="mr-2 inline" />
-            Education
+            {/* Education */}
           </h1>
 
           <div className="timeline-wrapper flex flex-col">

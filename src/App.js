@@ -43,14 +43,14 @@ function App() {
             </>
           ),
         },
-        {
-          path: '/resume',
-          element: (
-            <>
-              <Resume />
-            </>
-          ),
-        },
+        // {
+        //   path: '/resume',
+        //   element: (
+        //     <>
+        //       <Resume />
+        //     </>
+        //   ),
+        // },
         {
           path: '/contact',
           element: (

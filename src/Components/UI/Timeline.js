@@ -1,5 +1,4 @@
 import './Timeline.css';
-import { BsCalendar } from 'react-icons/bs';
 
 const Timeline = ({ position, institute, duration, duties }) => {
   const words = duties?.split(' ');
@@ -14,9 +13,7 @@ const Timeline = ({ position, institute, duration, duties }) => {
     <div className="timeline flex flex-col px-6 relative">
       <span className="position">{position}</span>
       <span className="institution">{institute}</span>
-      <span className="duration">
-        <BsCalendar /> {duration}
-      </span>
+      <span className="duration">{duration}</span>
       
     <span>
     

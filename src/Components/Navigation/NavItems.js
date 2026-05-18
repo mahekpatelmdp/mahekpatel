@@ -10,15 +10,20 @@ const NavItems = (props) => {
   return (
     <nav className={navigationItemsClasses}>
 
-      <NavigationLink
+      {/* <NavigationLink
         clickHandle={props.hideNavigation}
         name="Resume"
         link="/resume"
-      />
-      <NavigationLink
+      /> */}
+      {/* <NavigationLink
         clickHandle={props.hideNavigation}
         name="Contact"
         link="/contact"
+      /> */}
+      <NavigationLink
+        clickHandle={props.hideNavigation}
+        name="Projects"
+        link="/projects"
       />
       <NavigationLink
         clickHandle={props.hideNavigation}
