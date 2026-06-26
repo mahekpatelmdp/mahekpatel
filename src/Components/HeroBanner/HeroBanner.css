@@ -102,6 +102,51 @@
     object-fit: cover;
 }
 
+/* ── Tag chips ───────────────────────────────────────────────────────────── */
+.hero-tag {
+  display: inline-block;
+  padding: 5px 14px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.hero-tag:hover {
+  background: #1d4ed8;
+  color: #fff;
+}
+
+/* ── Stats row ────────────────────────────────────────────────────────────── */
+.hero-stats {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1d4ed8;
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 0.78rem;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 /* DESKTOP */
 @media (min-width: 768px) {
 

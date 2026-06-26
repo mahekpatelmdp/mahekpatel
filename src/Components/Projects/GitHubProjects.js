@@ -1,65 +1,78 @@
-import { FaGithub, FaExternalLinkAlt, FaStar } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaLock, FaRocket } from 'react-icons/fa';
 import './GitHubProjects.css';
 
 const GitHubProjects = () => {
+  const featured = {
+    id: 0,
+    name: 'HealthLab AI — Daily Reel Generator',
+    tagline: 'Full-Stack SaaS · Live Product',
+    description:
+      'AI-powered TikTok content engine for @overall_health_lab. Generates research-backed health reels with Groq LLM rewriting, auto-trending topic discovery from live health news feeds, performance analytics, AI video generation (ffmpeg), and a PWA installable on any device.',
+    stack: ['FastAPI', 'React', 'Groq AI', 'SQLite', 'Pillow', 'FFmpeg', 'Vite', 'Railway', 'Vercel'],
+    liveUrl: 'https://frontend-alpha-seven-70.vercel.app',
+    isPrivate: true,
+    isFeatured: true,
+  };
+
   const projects = [
     {
       id: 1,
-      name: 'ehr-adoption-snowflake',
-      description: 'Electronic Health Records adoption analysis using Snowflake cloud data warehouse.',
+      name: 'EHR Adoption Analysis',
+      description:
+        'End-to-end cloud analytics pipeline analysing Electronic Health Records adoption trends across US healthcare systems. Ingested and transformed raw EHR data in Snowflake, built dashboards surfacing adoption barriers and regional disparities.',
       language: 'Python',
-      stars: 0,
-      url: 'https://github.com/mahekpatelmdp/ehr-adoption-snowflake',
-      topics: ['EHR', 'Snowflake', 'Healthcare']
+      stack: ['Python', 'Snowflake', 'SQL', 'Power BI'],
+      isPrivate: true,
+      topics: ['EHR', 'Snowflake', 'Cloud Analytics', 'Healthcare IT'],
     },
     {
       id: 2,
-      name: 'patient-readmission-predictor',
-      description: 'Predictive model to identify patients at high risk of hospital readmission using machine learning.',
-      language: 'Jupyter Notebook',
-      stars: 0,
-      url: 'https://github.com/mahekpatelmdp/patient-readmission-predictor',
-      topics: ['ML', 'Healthcare', 'Prediction']
+      name: 'Patient Readmission Predictor',
+      description:
+        'Machine learning model identifying patients at high risk of 30-day hospital readmission. Achieved 84% AUC using XGBoost with SHAP explainability — outputs actionable risk flags for clinical teams.',
+      language: 'Python',
+      stack: ['Python', 'XGBoost', 'SHAP', 'Scikit-learn', 'Pandas'],
+      isPrivate: true,
+      topics: ['ML', 'Predictive Modelling', 'Clinical Risk', 'Healthcare'],
     },
     {
       id: 3,
-      name: 'hospital-payments-bigquery',
-      description: 'Real-world data engineering workflow for healthcare analytics. Raw hospital claims data is generated, cleaned with Python, and transformed into a dimensional model.',
+      name: 'Hospital Payments — BigQuery Pipeline',
+      description:
+        'Real-world data engineering workflow for a healthcare analytics team. Generates synthetic hospital claims data, cleans with Python, loads into BigQuery, and transforms into a dimensional model with dbt-style layering.',
       language: 'Python',
-      stars: 0,
-      url: 'https://github.com/mahekpatelmdp/hospital-payments-bigquery',
-      topics: ['BigQuery', 'Data Engineering', 'Healthcare']
+      stack: ['Python', 'BigQuery', 'SQL', 'Pandas', 'Data Modelling'],
+      isPrivate: true,
+      topics: ['BigQuery', 'Data Engineering', 'ETL', 'Healthcare'],
     },
     {
       id: 4,
-      name: 'hospital-payments-viz',
-      description: 'Analyzes hospital payment patterns using Tableau to uncover trends in how hospitals charge and receive payments for medical services.',
+      name: 'Hospital Payments — Tableau Dashboard',
+      description:
+        'Interactive Tableau workbook uncovering trends in how hospitals charge vs. receive payment for medical services — including charge-to-payment ratios, payer mix analysis, and geographic benchmarking.',
       language: 'Tableau',
-      stars: 0,
-      url: 'https://github.com/mahekpatelmdp/hospital-payments-viz',
-      topics: ['Tableau', 'Analytics', 'Visualization']
+      stack: ['Tableau', 'SQL', 'Data Visualisation'],
+      isPrivate: true,
+      topics: ['Tableau', 'Analytics', 'Healthcare Finance', 'Viz'],
     },
     {
       id: 5,
-      name: 'Predictive-Modeling-Healthcare-Data-Analysis',
-      description: 'Academic project focused on predictive modeling and data analysis in the healthcare domain using advanced statistical techniques.',
+      name: 'Predictive Modelling — Healthcare Data',
+      description:
+        'Academic capstone applying logistic regression, decision trees, and ensemble methods to structured clinical datasets. Focused on feature engineering from EHR-style data and model interpretability for clinical decision support.',
       language: 'Python',
-      stars: 0,
-      url: 'https://github.com/mahekpatelmdp/Predictive-Modeling-Healthcare-Data-Analysis',
-      topics: ['ML', 'Healthcare', 'Academic']
-    }
+      stack: ['Python', 'Scikit-learn', 'Matplotlib', 'Seaborn'],
+      isPrivate: true,
+      topics: ['ML', 'Clinical Decision Support', 'Feature Engineering'],
+    },
   ];
 
-  const getLanguageColor = (language) => {
-    const colors = {
-      'Python': '#3776ab',
-      'JavaScript': '#f1e05a',
-      'Jupyter Notebook': '#da5b0b',
-      'Tableau': '#e8a914',
-      'TypeScript': '#2b7489',
-      'Java': '#b07219'
-    };
-    return colors[language] || '#858585';
+  const LANG_COLORS = {
+    Python:           '#3776ab',
+    'Jupyter Notebook': '#da5b0b',
+    Tableau:          '#e8a914',
+    JavaScript:       '#f1e05a',
+    TypeScript:       '#2b7489',
   };
 
   return (
@@ -68,52 +81,75 @@ const GitHubProjects = () => {
         <FaGithub className="github-icon" />
         <h1 className="text-5xl font-bold">Projects</h1>
       </div>
-      
+
+      {/* ── Featured live project ── */}
+      <div className="featured-project-card mb-12">
+        <div className="featured-badge">
+          <FaRocket style={{ display: 'inline', marginRight: '6px' }} />
+          Featured — Live Product
+        </div>
+
+        <h2 className="featured-title">{featured.name}</h2>
+        <p className="featured-tagline">{featured.tagline}</p>
+        <p className="featured-description">{featured.description}</p>
+
+        <div className="featured-stack">
+          {featured.stack.map((s) => (
+            <span key={s} className="stack-chip">{s}</span>
+          ))}
+        </div>
+
+        <div className="featured-actions">
+          <a
+            href={featured.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="live-demo-btn"
+          >
+            <FaRocket style={{ display: 'inline', marginRight: '8px' }} />
+            Open Live App
+          </a>
+          <span className="private-note">
+            <FaLock style={{ display: 'inline', marginRight: '6px', fontSize: '0.8rem' }} />
+            Private repository
+          </span>
+        </div>
+      </div>
+
+      {/* ── Other projects grid ── */}
       <div className="github-projects-grid">
         {projects.map((project) => (
           <div key={project.id} className="github-project-card">
             <div className="project-card-header">
               <h2 className="project-title">{project.name}</h2>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link-icon"
-                title="View on GitHub"
-              >
-                <FaExternalLinkAlt />
-              </a>
+              <span className="private-badge" title="Private repository">
+                <FaLock />
+              </span>
             </div>
 
             <p className="project-description">{project.description}</p>
 
             <div className="project-meta">
-              <div className="language-badge" style={{ backgroundColor: getLanguageColor(project.language) }}>
-                <span className="language-dot"></span>
+              <div
+                className="language-badge"
+                style={{ backgroundColor: LANG_COLORS[project.language] || '#858585' }}
+              >
+                <span className="language-dot" />
                 {project.language}
               </div>
-              {project.stars > 0 && (
-                <div className="stars-badge">
-                  <FaStar /> {project.stars}
-                </div>
-              )}
             </div>
 
             <div className="project-topics">
-              {project.topics.map((topic, index) => (
-                <span key={index} className="topic-tag">{topic}</span>
+              {project.topics.map((topic) => (
+                <span key={topic} className="topic-tag">{topic}</span>
               ))}
             </div>
 
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="view-repo-btn"
-            >
-              View Repository
-              <FaExternalLinkAlt className="btn-icon" />
-            </a>
+            <div className="stack-row">
+              {project.stack.map((s) => (
+                <span key={s} className="stack-mini">{s}</span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
