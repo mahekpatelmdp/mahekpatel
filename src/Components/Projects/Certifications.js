@@ -18,17 +18,45 @@ const Certifications = () => {
     },
     {
       id: 3,
-      title: 'Clinical Data Management — CDISC / SDTM Standards',
-      issuer: 'CDISC · Industry Certification',
-      description: 'Clinical data standards (CDISC/SDTM), GCP/ICH E6(R2) compliance, data governance, and regulatory audit readiness.',
-      accent: '#107c10',
-    },
-    {
-      id: 4,
       title: 'Healthcare IT Support',
       issuer: 'Johns Hopkins University · Coursera',
       description: 'EHR/EMR technical support, IT infrastructure, and operations in high-volume healthcare environments.',
       accent: '#002d72',
+    },
+    {
+      id: 4,
+      title: 'Google Project Management',
+      issuer: 'Google · Coursera',
+      description: 'Project lifecycle, Agile and Scrum methodologies, stakeholder communication, and risk management.',
+      accent: '#4285f4',
+    },
+    {
+      id: 5,
+      title: 'Salesforce',
+      issuer: 'Salesforce · Trailhead',
+      description: 'CRM administration, data management, reporting, and workflow automation on the Salesforce platform.',
+      accent: '#00a1e0',
+    },
+    {
+      id: 6,
+      title: 'Business Intelligence',
+      issuer: 'Coursera',
+      description: 'BI concepts, data warehousing, dashboard design, and reporting pipelines for business decision-making.',
+      accent: '#f4b400',
+    },
+    {
+      id: 7,
+      title: 'UI / UX Design',
+      issuer: 'Coursera',
+      description: 'User research, wireframing, prototyping, accessibility principles, and designing intuitive digital products.',
+      accent: '#e91e8c',
+    },
+    {
+      id: 8,
+      title: 'Data Analyst',
+      issuer: 'Coursera',
+      description: 'Data cleaning, exploratory analysis, visualisation, and communicating insights from structured datasets.',
+      accent: '#34a853',
     },
   ];
 
