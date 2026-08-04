@@ -57,6 +57,12 @@
     margin-bottom: 0.6rem;
 }
 
+.timeline-summary {
+    color: #cfd0e0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
 .timeline-bullets {
     display: flex;
     flex-direction: column;

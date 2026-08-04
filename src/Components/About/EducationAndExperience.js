@@ -53,31 +53,19 @@ const EXPERIENCE = [
     icon: <FaRobot />,
     title: 'AI Training Specialist & Data Analyst',
     subtitle: 'Outlier AI, Vancouver, BC',
-    bullets: [
-      'Validated AI-generated outputs and ensured data accuracy across multiple datasets, improving output quality by 20% through root cause analysis.',
-      'Developed validation rules and standardized documentation for quality assurance and continuous improvement reporting.',
-    ],
+    summary: 'Validated AI-generated outputs and developed validation rules that improved data accuracy and output quality by 20% through root cause analysis.',
   },
   {
     icon: <FaFlask />,
     title: 'Research Coordinator',
     subtitle: 'University of Illinois Springfield',
-    bullets: [
-      'Conducted predictive modeling and exploratory data analysis on adoption datasets.',
-      'Applied statistical techniques to identify trends and generate actionable insights.',
-    ],
+    summary: 'Conducted predictive modeling and exploratory data analysis on adoption datasets, applying statistical techniques to identify trends and generate actionable insights.',
   },
   {
     icon: <FaBriefcase />,
     title: 'Business Analyst',
     subtitle: 'Santram Pharma Pvt. Ltd., India',
-    bullets: [
-      'Wrote complex SQL queries to extract, transform, and validate data across multiple source systems.',
-      'Identified data inconsistencies and implemented validation rules through root cause analysis, improving report accuracy by 25%.',
-      'Built and maintained Tableau and Power BI dashboards tracking sales performance, product pipeline, and revenue forecasts.',
-      'Connected Salesforce CRM data to a centralized reporting environment, improving pipeline visibility for leadership.',
-      'Led the monthly reporting cycle end-to-end — KPI scorecards and executive reports for business reviews and forecasting.',
-    ],
+    summary: 'Wrote SQL queries and built Tableau/Power BI dashboards tracking sales, pipeline, and revenue — connecting Salesforce CRM data into centralized reporting and leading the monthly KPI reporting cycle for leadership.',
   },
 ];
 

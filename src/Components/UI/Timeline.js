@@ -1,7 +1,7 @@
 import './Timeline.css';
 import Reveal from './Reveal';
 
-const Timeline = ({ icon, title, subtitle, duration, bullets, courses, isLast, delay }) => {
+const Timeline = ({ icon, title, subtitle, duration, summary, bullets, courses, isLast, delay }) => {
   return (
     <Reveal delay={delay} className="timeline-item">
       <div className="timeline-marker">
@@ -13,6 +13,7 @@ const Timeline = ({ icon, title, subtitle, duration, bullets, courses, isLast, d
         <h4>{title}</h4>
         <p className="timeline-subtitle">{subtitle}</p>
         {duration && <p className="timeline-duration">{duration}</p>}
+        {summary && <p className="timeline-summary">{summary}</p>}
 
         {bullets?.length > 0 && (
           <ul className="timeline-bullets">

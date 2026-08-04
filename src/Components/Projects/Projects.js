@@ -69,7 +69,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section px-6 lg:px-16 py-24">
       <Reveal>
-        <SectionBadge label="Notable" highlight="Projects" />
+        <SectionBadge label="Projects" />
       </Reveal>
 
       <div className="projects-grid mt-14">
@@ -83,7 +83,6 @@ const Projects = () => {
               <img src={project.image} alt={`${project.title} — sample dashboard`} loading="lazy" />
             </div>
 
-            <span className="project-index">{String(idx + 1).padStart(2, '0')}</span>
             <span className="project-tag">{project.tag}</span>
             <h3 className="project-title">{project.title}</h3>
 

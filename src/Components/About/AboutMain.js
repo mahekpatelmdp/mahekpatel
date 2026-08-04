@@ -1,5 +1,4 @@
 import './AboutMain.css';
-import resumePath from '../../assets/Resume_MahekPatel.pdf';
 import { FaLinkedinIn, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import SectionBadge from '../UI/SectionBadge';
 import Reveal from '../UI/Reveal';
@@ -38,7 +37,6 @@ const AboutMain = () => {
 
           <div className="about-actions">
             <a href="#projects" className="btn btn-solid">Projects</a>
-            <a href={resumePath} download className="btn btn-outline">Download CV</a>
           </div>
 
           <div className="about-socials">

@@ -6,7 +6,6 @@ const Footer = () => {
     <footer>
       <div className="footer-inner">
         <span>© {currentYear} Mahek Patel</span>
-        <span className="footer-tagline">Data &amp; Business Analyst</span>
       </div>
     </footer>
   );

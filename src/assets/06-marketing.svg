@@ -14,8 +14,6 @@
   <rect x="0" y="0" width="630" height="600" fill="url(#leftGrad)"/>
   <rect x="0" y="0" width="630" height="600" fill="url(#glow)"/>
 
-  <!-- big faded number -->
-  <text x="40" y="150" font-size="130" font-weight="800" fill="#FFFFFF" opacity="0.08">06</text>
 
   <!-- icon -->
   <g transform="translate(150,200) scale(0.8)">

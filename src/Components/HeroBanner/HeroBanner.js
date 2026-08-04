@@ -1,17 +1,13 @@
 import heroImage from '../../assets/heroPhoto.png';
-import resumePath from '../../assets/Resume_MahekPatel.pdf';
 import './HeroBanner.css';
 import { FaLinkedinIn, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
-import SectionBadge from '../UI/SectionBadge';
 import Reveal from '../UI/Reveal';
 
 const HeroBanner = () => {
   return (
     <section id="home" className="hero-wrapper flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-14 px-6 lg:px-16 pt-28 pb-16 lg:pt-32 lg:pb-20">
       <Reveal className="hero-text max-w-2xl text-center lg:text-left">
-        <SectionBadge label="Data &amp; Business Analyst" highlight="Portfolio" />
-
-        <h1 className="hero-name mt-6">
+        <h1 className="hero-name">
           <span className="line">MAHEK</span>
           <span className="line accent">PATEL</span>
         </h1>
@@ -23,7 +19,6 @@ const HeroBanner = () => {
 
         <div className="hero-actions">
           <a href="#projects" className="btn btn-solid">View Projects</a>
-          <a href={resumePath} download className="btn btn-outline">Download CV</a>
         </div>
 
         <div className="hero-socials">
