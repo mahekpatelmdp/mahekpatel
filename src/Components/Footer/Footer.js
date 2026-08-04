@@ -4,8 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <div className="copyright-text">
-        Copyright &copy; {currentYear} | Mahek Patel Portfolio
+      <div className="footer-inner">
+        <span>© {currentYear} Mahek Patel</span>
+        <span className="footer-tagline">Data &amp; Business Analyst</span>
       </div>
     </footer>
   );

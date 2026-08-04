@@ -1,29 +1,28 @@
 import './Timeline.css';
+import Reveal from './Reveal';
 
-const Timeline = ({ position, institute, duration, duties }) => {
-  const words = duties?.split(' ');
-
-  // Group words into lines with a maximum of 5 words each
-  const lines = [];
-  for (let i = 0; i < words?.length; i += 5) {
-    lines.push(words.slice(i, i + 6).join(' '));
-  }
-
+const Timeline = ({ icon, title, subtitle, duration, bullets, isLast, delay }) => {
   return (
-    <div className="timeline flex flex-col px-6 relative">
-      <span className="position">{position}</span>
-      <span className="institution">{institute}</span>
-      <span className="duration">{duration}</span>
-      
-    <span>
-    
-      <strong>
-        {lines.map((line, index) => (
-          <p key={index}>{line}</p>
-        ))}
-        </strong>
-      </span>
-        </div>
+    <Reveal delay={delay} className="timeline-item">
+      <div className="timeline-marker">
+        <span className="timeline-icon">{icon}</span>
+        {!isLast && <span className="timeline-line" />}
+      </div>
+
+      <div className="timeline-content">
+        <h4>{title}</h4>
+        <p className="timeline-subtitle">{subtitle}</p>
+        <p className="timeline-duration">{duration}</p>
+
+        {bullets?.length > 0 && (
+          <ul className="timeline-bullets">
+            {bullets.map((bullet) => (
+              <li key={bullet}>{bullet}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </Reveal>
   );
 };
 

@@ -4,14 +4,11 @@ import {
   Outlet,
   RouterProvider,
   ScrollRestoration,
+  Navigate,
 } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import NavBar from './Components/Navigation/Navbar';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
-import About from './pages/About';
 import Error404 from './Components/Error/Error404';
-import ProjectsPage from './pages/ProjectsPage';
 import Footer from './Components/Footer/Footer';
 
 function App() {
@@ -37,44 +34,12 @@ function App() {
       children: [
         {
           path: '/',
-          element: (
-            <>
-              <Homepage />
-            </>
-          ),
+          element: <Homepage />,
         },
-        // {
-        //   path: '/resume',
-        //   element: (
-        //     <>
-        //       <Resume />
-        //     </>
-        //   ),
-        // },
-        {
-          path: '/contact',
-          element: (
-            <>
-              <Contact />
-            </>
-          ),
-        },
-        {
-          path: '/about',
-          element: (
-            <>
-              <About />
-            </>
-          ),
-        },
-        {
-          path: '/projects',
-          element: (
-            <>
-              <ProjectsPage />
-            </>
-          ),
-        },
+        { path: '/about', element: <Navigate to="/#about" replace /> },
+        { path: '/projects', element: <Navigate to="/#projects" replace /> },
+        { path: '/contact', element: <Navigate to="/#contact" replace /> },
+        { path: '/resume', element: <Navigate to="/#about" replace /> },
       ],
     },
   ]);

@@ -1,17 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --primary: #22223b; /* Professional dark blue */
-    --secondary: #4a4e69; /* Muted blue-gray */
-    --accent: #9a8c98; /* Subtle accent */
-    --background: #f8f9fa; /* Light neutral background */
+    --navy-950: #080b0d;
+    --navy-900: #12181c;
+    --navy-800: #1a2226;
+    --navy-700: #222b30;
+    --navy-600: #2b363c;
+    --gold-300: #a8f0e4;
+    --gold-400: #45ddc7;
+    --gold-500: #2dd4bf;
+    --gold-600: #22a396;
 }
 
 html {
-    scroll-behavior:smooth
+    scroll-behavior: smooth;
 }
 
 .main {
@@ -22,66 +27,66 @@ html {
 
 html, body, .main, #root {
     min-height: 100vh;
-} 
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
-    font-family:  'Lato', sans-serif;
-    background: var(--background);
+    font-family: 'Poppins', sans-serif;
+    background: var(--navy-900);
+    color: #f4f4f8;
 }
 
-.button {
-    padding: 15px;
-    color: #fff;
-    background-color: var(--secondary);
-    border-radius: 8px;
-    border: none;
-    width: 200px;
-    text-align: center;
-    transition: background 0.3s ease-in;
-    cursor: pointer;
-    font-weight: 600;
-    box-shadow: 0 2px 8px 0 #e0e0e0;
+* {
+    min-width: 0;
 }
 
-.button:disabled {
-    cursor: default;
-    opacity: 0.7;
+::selection {
+    background: var(--gold-500);
+    color: var(--navy-900);
 }
 
-.button:hover:not([disabled]) {
-    background-color: var(--primary);
-    color: #fff;
+/* ---- scroll reveal ---- */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.loading-wrapper {
-    display: flex;
-    position: fixed;
-    /* width: 100%; */
-    left: 0;
-    justify-content: center;
+.reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---- pill badge used above each section heading ---- */
+.section-badge {
+    display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
-    /* text-align: center; */
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(255,255,255,0.7);
-    z-index: 9999;   
+    justify-content: center;
+    gap: 6px;
+    max-width: 100%;
+    padding: 8px 20px;
+    border: 1.5px solid var(--gold-500);
+    border-radius: 999px;
+    color: var(--gold-400);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-textarea.field-error {
-    border-color: red;
+@media (min-width: 480px) {
+    .section-badge {
+        font-size: 0.85rem;
+    }
 }
 
-textarea {
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font: inherit;
-    padding: 10px;
-    min-height: 200px;
-    outline: none;
-}
-
-textarea:focus {
-    border: 1px solid var(--secondary);
+.section-badge .badge-highlight {
+    color: #f4f4f8;
+    font-weight: 700;
 }

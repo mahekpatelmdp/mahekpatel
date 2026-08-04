@@ -1,10 +1,19 @@
 .error-page-wrapper {
     margin-top: 50px;
-    padding: 25px;
+    padding: 25px 25px 80px;
+    min-height: 60vh;
+    color: #f4f4f8;
 }
 
 .error-404-title {
     font-size: 100px;
+    font-weight: 800;
+    color: var(--gold-500);
+}
+
+.error-404-contents p {
+    color: #9a9bc0;
+    margin-top: 0.5rem;
 }
 
 @media (min-width: 768px) {

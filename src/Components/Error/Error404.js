@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './Error404.css';
 import { Helmet } from 'react-helmet';
 
@@ -14,9 +13,9 @@ const Error404 = () => {
           <h2>404 - Page Not Found</h2>
           <p>The page you are looking for does not exist!</p>
         </div>
-        <Link className="button block mt-6 mx-auto w-200" to="/">
-          GO TO HOMEPAGE
-        </Link>
+        <a className="btn btn-solid mt-6 inline-block" href="/">
+          Go To Homepage
+        </a>
       </div>
     </div>
   );

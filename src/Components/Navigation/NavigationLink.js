@@ -1,15 +1,13 @@
-import { NavLink } from 'react-router-dom';
-
 const NavigationLink = (props) => {
   return (
-    <NavLink
+    <a
       onClick={props.clickHandle}
       className="nav-links"
-      to={props.link}
+      href={props.link}
       title={props.name}
     >
       {props.name}
-    </NavLink>
+    </a>
   );
 };
 

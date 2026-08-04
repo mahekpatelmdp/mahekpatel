@@ -1,5 +1,14 @@
 import NavigationLink from './NavigationLink';
 
+const NAV_LINKS = [
+  { name: 'Home', link: '#home' },
+  { name: 'About Me', link: '#about' },
+  { name: 'Skills', link: '#skills' },
+  { name: 'Background', link: '#background' },
+  { name: 'Projects', link: '#projects' },
+  { name: 'Contact', link: '#contact' },
+];
+
 const NavItems = (props) => {
   const navigationItemsClasses =
     'navigation-items ' +
@@ -9,31 +18,14 @@ const NavItems = (props) => {
 
   return (
     <nav className={navigationItemsClasses}>
-
-      {/* <NavigationLink
-        clickHandle={props.hideNavigation}
-        name="Resume"
-        link="/resume"
-      /> */}
-      {/* <NavigationLink
-        clickHandle={props.hideNavigation}
-        name="Contact"
-        link="/contact"
-      /> */}
-      <NavigationLink
-        clickHandle={props.hideNavigation}
-        name="Projects"
-        link="/projects"
-      />
-      <NavigationLink
-        clickHandle={props.hideNavigation}
-        name="About"
-        link="/about"
-      />
-
-      {/* Icons inline (same row) */}
-   
-
+      {NAV_LINKS.map((item) => (
+        <NavigationLink
+          key={item.link}
+          clickHandle={props.hideNavigation}
+          name={item.name}
+          link={item.link}
+        />
+      ))}
     </nav>
   );
 };
