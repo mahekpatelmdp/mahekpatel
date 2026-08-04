@@ -1,7 +1,7 @@
 import './Timeline.css';
 import Reveal from './Reveal';
 
-const Timeline = ({ icon, title, subtitle, duration, bullets, isLast, delay }) => {
+const Timeline = ({ icon, title, subtitle, duration, bullets, courses, isLast, delay }) => {
   return (
     <Reveal delay={delay} className="timeline-item">
       <div className="timeline-marker">
@@ -20,6 +20,16 @@ const Timeline = ({ icon, title, subtitle, duration, bullets, isLast, delay }) =
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
+        )}
+
+        {courses?.length > 0 && (
+          <div className="courses-marquee">
+            <div className="courses-track">
+              {[...courses, ...courses].map((course, idx) => (
+                <span className="course-chip" key={`${course}-${idx}`}>{course}</span>
+              ))}
+            </div>
+          </div>
         )}
       </div>
     </Reveal>

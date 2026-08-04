@@ -81,3 +81,39 @@
     border-radius: 50%;
     background: var(--gold-500);
 }
+
+.courses-marquee {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+
+.courses-track {
+    display: flex;
+    width: max-content;
+    gap: 0.6rem;
+    animation: courses-scroll 35s linear infinite;
+}
+
+.courses-marquee:hover .courses-track {
+    animation-play-state: paused;
+}
+
+@keyframes courses-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.course-chip {
+    flex: 0 0 auto;
+    background: rgba(244, 244, 248, 0.06);
+    border: 1px solid rgba(244, 244, 248, 0.12);
+    color: #cfd0e0;
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
