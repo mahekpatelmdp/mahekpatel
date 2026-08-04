@@ -7,6 +7,8 @@ import bannerRetail from '../../assets/03-retail.svg';
 import bannerBanking from '../../assets/04-banking-finance.svg';
 import bannerHR from '../../assets/05-hr-people-analytics.svg';
 import bannerMarketing from '../../assets/06-marketing.svg';
+import bannerConstruction from '../../assets/07-construction.svg';
+import constructionWorkbook from '../../assets/Construction_Profit_Dashboard.xlsx';
 
 const PROJECTS = [
   {
@@ -63,6 +65,17 @@ const PROJECTS = [
     result: 'Provided a clear, significance-backed recommendation on which campaign variant to scale.',
     tools: ['Excel', 'SQL', 'A/B Testing', 'ANOVA'],
   },
+  {
+    image: bannerConstruction,
+    tag: 'Construction & Real Estate',
+    title: 'Construction Profit Intelligence Dashboard',
+    problem: 'A portfolio of construction projects had no single view tying contract value, cost overruns, and workforce efficiency together — margin risk wasn’t visible until it was too late to act.',
+    approach: 'Built a fully formula-driven Excel model across 7 linked tabs — project-level margin tracking with conditional-formatted risk status, category-level cost variance, workforce/overtime tracking, and a live bid simulator that recalculates projected margin from a single cost-increase assumption — benchmarked against real Statistics Canada construction price and permit data.',
+    result: 'Surfaced materials cost overruns (+12% vs. budget) as the leading driver of the portfolio margin gap, flagged 2 of 6 projects as at-risk, and produced a defensible bid-adjustment recommendation for future contracts.',
+    tools: ['Excel', 'Financial Modeling', 'Scenario Analysis', 'Statistics Canada Data'],
+    file: constructionWorkbook,
+    fileLabel: 'Download Workbook (.xlsx)',
+  },
 ];
 
 const Projects = () => {
@@ -95,6 +108,12 @@ const Projects = () => {
                 <span key={tool} className="tool-chip">{tool}</span>
               ))}
             </div>
+
+            {project.file && (
+              <a href={project.file} download className="project-file-link">
+                {project.fileLabel}
+              </a>
+            )}
           </Reveal>
         ))}
       </div>

@@ -36,7 +36,7 @@ const HeroBanner = () => {
 
       <Reveal delay={150} className="hero-image-wrapper">
         <div className="hero-photo-frame">
-          <img alt="Mahek Patel presenting a data dashboard" src={heroImage} />
+          <img alt="Mahek Patel" src={heroImage} />
         </div>
       </Reveal>
 
