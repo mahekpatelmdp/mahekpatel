@@ -2,6 +2,7 @@ import './Skills.css';
 import {
   SiMysql,
   SiPython,
+  SiR,
   SiMicrosoftexcel,
   SiGooglesheets,
   SiGooglebigquery,
@@ -23,6 +24,7 @@ const SKILL_COLUMNS = [
     items: [
       { icon: <SiMysql />, label: 'SQL' },
       { icon: <SiPython />, label: 'Python' },
+      { icon: <SiR />, label: 'R' },
     ],
   },
   {

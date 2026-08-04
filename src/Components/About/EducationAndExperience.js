@@ -8,7 +8,6 @@ const EDUCATION = [
     icon: <FaGraduationCap />,
     title: "Master's, Healthcare Informatics",
     subtitle: 'University of Illinois Springfield, USA',
-    duration: 'Jan 2025 – May 2026',
     bullets: [
       'Healthcare System Analysis and Design',
       'Business Analysis',
@@ -20,7 +19,6 @@ const EDUCATION = [
     icon: <FaTooth />,
     title: 'Bachelor of Dental Surgery (B.D.S)',
     subtitle: 'Dharmsinh Desai University, Nadiad, India',
-    duration: 'Jul 2018 – Sep 2023',
     bullets: ['Public Health', 'Pathology & Radiology'],
   },
 ];
@@ -30,7 +28,6 @@ const EXPERIENCE = [
     icon: <FaRobot />,
     title: 'AI Training Specialist & Data Analyst',
     subtitle: 'Outlier AI, Vancouver, BC',
-    duration: 'Feb 2026 – Present',
     bullets: [
       'Validated AI-generated outputs and ensured data accuracy across multiple datasets, improving output quality by 20% through root cause analysis.',
       'Developed validation rules and standardized documentation for quality assurance and continuous improvement reporting.',
@@ -40,7 +37,6 @@ const EXPERIENCE = [
     icon: <FaFlask />,
     title: 'Research Coordinator',
     subtitle: 'University of Illinois Springfield',
-    duration: 'Jan 2025 – Feb 2026',
     bullets: [
       'Conducted predictive modeling and exploratory data analysis on adoption datasets.',
       'Applied statistical techniques to identify trends and generate actionable insights.',
@@ -50,7 +46,6 @@ const EXPERIENCE = [
     icon: <FaBriefcase />,
     title: 'Business Analyst',
     subtitle: 'Santram Pharma Pvt. Ltd., India',
-    duration: 'Sep 2023 – Jan 2025',
     bullets: [
       'Wrote complex SQL queries to extract, transform, and validate data across multiple source systems.',
       'Identified data inconsistencies and implemented validation rules through root cause analysis, improving report accuracy by 25%.',

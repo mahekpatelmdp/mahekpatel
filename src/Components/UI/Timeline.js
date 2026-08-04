@@ -12,7 +12,7 @@ const Timeline = ({ icon, title, subtitle, duration, bullets, isLast, delay }) =
       <div className="timeline-content">
         <h4>{title}</h4>
         <p className="timeline-subtitle">{subtitle}</p>
-        <p className="timeline-duration">{duration}</p>
+        {duration && <p className="timeline-duration">{duration}</p>}
 
         {bullets?.length > 0 && (
           <ul className="timeline-bullets">
