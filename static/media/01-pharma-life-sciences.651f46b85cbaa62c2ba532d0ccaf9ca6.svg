@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1400 600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="leftGrad01" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B4A44"/><stop offset="100%" stop-color="#082E2B"/>
+    </linearGradient>
+    <radialGradient id="glow01" cx="30%" cy="20%" r="75%">
+      <stop offset="0%" stop-color="#3FD7C4" stop-opacity="0.35"/><stop offset="100%" stop-color="#3FD7C4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="1400" height="600" fill="#082E2B"/>
+  <rect x="0" y="0" width="630" height="600" fill="url(#leftGrad01)"/>
+  <rect x="0" y="0" width="630" height="600" fill="url(#glow01)"/>
+  
+  <g transform="translate(150,200) scale(0.8)"><g><g transform="rotate(-28)">
+      <rect x="-90" y="-32" width="180" height="64" rx="32" fill="#B9F3EA"/>
+      <path d="M -90 -32 A 32 32 0 0 0 -90 32 L 0 32 L 0 -32 Z" fill="#3FD7C4"/>
+      <rect x="-90" y="-32" width="180" height="64" rx="32" fill="none" stroke="#3FD7C4" stroke-width="4"/></g>
+      <circle cx="95" cy="-70" r="10" fill="#B9F3EA"/><circle cx="130" cy="-40" r="7" fill="#B9F3EA" opacity="0.8"/>
+      <circle cx="70" cy="-100" r="6" fill="#B9F3EA" opacity="0.6"/>
+      <line x1="95" y1="-70" x2="130" y2="-40" stroke="#B9F3EA" stroke-width="3" opacity="0.7"/>
+      <line x1="95" y1="-70" x2="70" y2="-100" stroke="#B9F3EA" stroke-width="3" opacity="0.7"/></g></g>
+  <text x="40" y="330" font-size="15" font-weight="700" letter-spacing="3" fill="#B9F3EA">PHARMA &amp; LIFE SCIENCES</text>
+  <text x="40" y="366" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">PHARMA INVENTORY &amp;</text>
+  <text x="40" y="400" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">SALES ANALYTICS</text>
+  <line x1="40" y1="424" x2="140" y2="424" stroke="#B9F3EA" stroke-width="3"/><rect x="40" y="444" width="43" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14" stroke="#B9F3EA" stroke-opacity="0.35" stroke-width="1"/>
+        <text x="61" y="461" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#B9F3EA" text-anchor="middle">SQL</text><rect x="91" y="444" width="91" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14" stroke="#B9F3EA" stroke-opacity="0.35" stroke-width="1"/>
+        <text x="136" y="461" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#B9F3EA" text-anchor="middle">TypeScript</text><rect x="190" y="444" width="153" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14" stroke="#B9F3EA" stroke-opacity="0.35" stroke-width="1"/>
+        <text x="266" y="461" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#B9F3EA" text-anchor="middle">Data Transformation</text><rect x="351" y="444" width="112" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14" stroke="#B9F3EA" stroke-opacity="0.35" stroke-width="1"/>
+        <text x="407" y="461" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#B9F3EA" text-anchor="middle">Data Modeling</text><rect x="630" y="0" width="770" height="600" fill="#EDEEF2"/>
+    <rect x="630" y="0" width="770" height="66" fill="#FFFFFF"/>
+    <line x1="630" y1="66" x2="1400" y2="66" stroke="#DADEE5" stroke-width="2"/>
+    <rect x="658" y="20" width="26" height="26" rx="6" fill="#3FD7C4"/>
+    <text x="696" y="39" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#20242C" letter-spacing="0.5">PHARMA SALES &amp; INVENTORY DASHBOARD</text><rect x="1262" y="21" width="110" height="24" rx="12" fill="#DFF8F3"/>
+        <text x="1317" y="37" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#0E6E63" text-anchor="middle" letter-spacing="0.3">94% ACCURACY</text><rect x="658.0" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+        <text x="674.0" y="126" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#0E6E63">12,480</text>
+        <text x="674.0" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">SKUs TRACKED</text><rect x="901.3333333333334" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+        <text x="917.3333333333334" y="126" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#0E6E63">$1.2M</text>
+        <text x="917.3333333333334" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">OUTSTANDING BALANCE</text><rect x="1144.6666666666667" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+        <text x="1160.6666666666667" y="126" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#0E6E63">6.4x</text>
+        <text x="1160.6666666666667" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">STOCK TURNOVER</text><rect x="658" y="186" width="300" height="250" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+    <text x="674" y="210" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">INVENTORY SHARE BY CATEGORY</text><circle cx="753" cy="326" r="66" fill="none" stroke="#EEF0F3" stroke-width="22"/><circle cx="753" cy="326" r="66" fill="none" stroke="#3FD7C4" stroke-width="22"
+            stroke-dasharray="32.0 68.0" pathLength="100" stroke-dashoffset="0"
+            transform="rotate(-90 753 326)" stroke-linecap="butt"/><circle cx="753" cy="326" r="66" fill="none" stroke="#7FE3D3" stroke-width="22"
+            stroke-dasharray="24.0 76.0" pathLength="100" stroke-dashoffset="-32.0"
+            transform="rotate(-90 753 326)" stroke-linecap="butt"/><circle cx="753" cy="326" r="66" fill="none" stroke="#B9F3EA" stroke-width="22"
+            stroke-dasharray="20.0 80.0" pathLength="100" stroke-dashoffset="-56.0"
+            transform="rotate(-90 753 326)" stroke-linecap="butt"/><circle cx="753" cy="326" r="66" fill="none" stroke="#DDF9F2" stroke-width="22"
+            stroke-dasharray="14.000000000000002 86.0" pathLength="100" stroke-dashoffset="-76.0"
+            transform="rotate(-90 753 326)" stroke-linecap="butt"/><circle cx="753" cy="326" r="66" fill="none" stroke="#EEF0F3" stroke-width="22"
+            stroke-dasharray="10.0 90.0" pathLength="100" stroke-dashoffset="-90.0"
+            transform="rotate(-90 753 326)" stroke-linecap="butt"/><circle cx="843" cy="244" r="5" fill="#3FD7C4"/>
+        <text x="857" y="248" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4A4F5A">Antibiotics</text>
+        <text x="993" y="248" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0E6E63">32%</text><circle cx="843" cy="262" r="5" fill="#7FE3D3"/>
+        <text x="857" y="266" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4A4F5A">Analgesics</text>
+        <text x="993" y="266" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0E6E63">24%</text><circle cx="843" cy="280" r="5" fill="#B9F3EA"/>
+        <text x="857" y="284" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4A4F5A">Vitamins</text>
+        <text x="993" y="284" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0E6E63">20%</text><circle cx="843" cy="298" r="5" fill="#DDF9F2"/>
+        <text x="857" y="302" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4A4F5A">Antacids</text>
+        <text x="993" y="302" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0E6E63">14%</text><circle cx="843" cy="316" r="5" fill="#EEF0F3"/>
+        <text x="857" y="320" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4A4F5A">Other</text>
+        <text x="993" y="320" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0E6E63">10%</text><rect x="974" y="186" width="398" height="250" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+    <text x="990" y="210" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">STOCK ACCURACY</text><path d="M 1085.0 336 A 88 88 0 0 1 1261.0 336" fill="none" stroke="#EEF0F3" stroke-width="16" stroke-linecap="round"/><path d="M 1085.0 336 A 88 88 0 0 1 1261.0 336" fill="none" stroke="#3FD7C4" stroke-width="16"
+        stroke-linecap="round" stroke-dasharray="259.9 16.6"/><text x="1173.0" y="322" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#22262E" text-anchor="middle">94%</text><text x="1173.0" y="346" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8A8F99" text-anchor="middle" letter-spacing="0.3">TARGET ≥ 90%</text><rect x="658" y="452" width="714" height="124" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+    <text x="674" y="476" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">TOP MOVING PRODUCTS — RESTOCK PRIORITY</text><rect x="674" y="494" width="192" height="25" rx="12" fill="#B9F3EA"/>
+        <text x="770" y="510" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0E6E63" text-anchor="middle">Paracetamol 500mg · 4,120 u</text><rect x="874" y="494" width="192" height="25" rx="12" fill="#B9F3EA"/>
+        <text x="970" y="510" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0E6E63" text-anchor="middle">Amoxicillin 250mg · 3,340 u</text><rect x="1075" y="494" width="180" height="25" rx="12" fill="#EEF0F3"/>
+        <text x="1164" y="510" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#4A4F5A" text-anchor="middle">Cetirizine 10mg · 2,870 u</text><rect x="674" y="529" width="148" height="25" rx="12" fill="#EEF0F3"/>
+        <text x="748" y="546" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#4A4F5A" text-anchor="middle">ORS Sachet · 2,410 u</text><rect x="830" y="529" width="186" height="25" rx="12" fill="#EEF0F3"/>
+        <text x="923" y="546" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#4A4F5A" text-anchor="middle">Vitamin C 1000mg · 1,980 u</text></svg>
