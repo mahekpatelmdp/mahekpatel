@@ -65,7 +65,7 @@ const EXPERIENCE = [
     icon: <FaBriefcase />,
     title: 'Business Analyst',
     subtitle: 'Santram Pharma Pvt. Ltd., India',
-    summary: 'Wrote SQL queries and built Tableau/Power BI dashboards tracking sales, pipeline, and revenue — connecting Salesforce CRM data into centralized reporting and leading the monthly KPI reporting cycle for leadership.',
+    summary: 'Wrote SQL queries and built Tableau/Power BI dashboards tracking sales, pipeline, and revenue, while connecting Salesforce CRM data into centralized reporting and leading the monthly KPI reporting cycle for leadership.',
   },
 ];
 

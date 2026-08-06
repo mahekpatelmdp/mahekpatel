@@ -10,7 +10,7 @@
   <rect x="0" y="0" width="1400" height="600" fill="#082E2B"/>
   <rect x="0" y="0" width="630" height="600" fill="url(#leftGrad01)"/>
   <rect x="0" y="0" width="630" height="600" fill="url(#glow01)"/>
-  <text x="40" y="150" font-size="130" font-weight="800" fill="#FFFFFF" opacity="0.08">01</text>
+  
   <g transform="translate(150,200) scale(0.8)"><g><g transform="rotate(-28)">
       <rect x="-90" y="-32" width="180" height="64" rx="32" fill="#B9F3EA"/>
       <path d="M -90 -32 A 32 32 0 0 0 -90 32 L 0 32 L 0 -32 Z" fill="#3FD7C4"/>

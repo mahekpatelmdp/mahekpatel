@@ -5,23 +5,23 @@ import Reveal from '../UI/Reveal';
 
 const HeroBanner = () => {
   return (
-    <section id="home" className="hero-wrapper flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-14 px-6 lg:px-16 pt-28 pb-16 lg:pt-32 lg:pb-20">
-      <Reveal className="hero-text max-w-2xl text-center lg:text-left">
-        <h1 className="hero-name">
+    <section id="home" className="hero-wrapper flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 px-6 lg:px-16 pt-28 pb-16 lg:pt-32 lg:pb-20">
+      <div className="hero-text max-w-2xl text-center lg:text-left">
+        <Reveal as="h1" delay={0} className="hero-name">
           <span className="line">MAHEK</span>
           <span className="line accent">PATEL</span>
-        </h1>
+        </Reveal>
 
-        <p className="hero-tagline">
+        <Reveal as="p" delay={120} className="hero-tagline">
           I find the <span className="accent">patterns</span> hiding in data
           <br className="hidden lg:block" /> and turn them into <span className="accent">decisions</span>.
-        </p>
+        </Reveal>
 
-        <div className="hero-actions">
+        <Reveal delay={240} className="hero-actions">
           <a href="#projects" className="btn btn-solid">View Projects</a>
-        </div>
+        </Reveal>
 
-        <div className="hero-socials">
+        <Reveal delay={340} className="hero-socials">
           <a href="https://www.linkedin.com/in/mahek-patel-8ba264286" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-circle">
             <FaLinkedinIn />
           </a>
@@ -31,18 +31,14 @@ const HeroBanner = () => {
           <a href="mailto:mahekpatel.mdp@gmail.com" aria-label="Email" className="social-circle">
             <FaEnvelope />
           </a>
-        </div>
-      </Reveal>
+        </Reveal>
+      </div>
 
-      <Reveal delay={150} className="hero-image-wrapper">
+      <Reveal delay={200} className="hero-image-wrapper">
         <div className="hero-photo-frame">
           <img alt="Mahek Patel" src={heroImage} />
         </div>
       </Reveal>
-
-      <a href="#about" className="scroll-hint" aria-label="Scroll down">
-        <span className="scroll-dot" />
-      </a>
     </section>
   );
 };

@@ -24,15 +24,14 @@ const AboutMain = () => {
             in Healthcare Informatics and hands-on experience across AI data validation, healthcare
             research, and pharma business analysis. I turn messy, real-world data into clear
             reporting using{' '}
-            <span className="accent">SQL, Python, Excel, Power BI, Tableau, and Looker Studio</span>{' '}
-            — from data validation and ETL to dashboard design and stakeholder-ready reporting.
+            <span className="accent">SQL, Python, Excel, Power BI, Tableau, and Looker Studio</span>,{' '}
+            from data validation and ETL to dashboard design and stakeholder-ready reporting.
           </p>
           <p>
             Comfortable bridging technical and business teams, with a track record in{' '}
             <span className="accent">root cause analysis, predictive modeling, and KPI
-            reporting</span>{' '}
-            — including building Tableau/Power BI dashboards and connecting Salesforce CRM data to
-            centralized reporting for leadership.
+            reporting</span>, including building Tableau/Power BI dashboards and connecting
+            Salesforce CRM data to centralized reporting for leadership.
           </p>
 
           <div className="about-actions">

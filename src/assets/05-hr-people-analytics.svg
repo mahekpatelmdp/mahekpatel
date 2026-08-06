@@ -10,7 +10,7 @@
   <rect x="0" y="0" width="1400" height="600" fill="#231536"/>
   <rect x="0" y="0" width="630" height="600" fill="url(#leftGrad05)"/>
   <rect x="0" y="0" width="630" height="600" fill="url(#glow05)"/>
-  <text x="40" y="150" font-size="130" font-weight="800" fill="#FFFFFF" opacity="0.08">05</text>
+  
   <g transform="translate(150,200) scale(0.8)"><g><circle cx="0" cy="-70" r="26" fill="#E5D6F5"/>
       <path d="M -40 -10 Q 0 -35 40 -10 L 40 20 L -40 20 Z" fill="#E5D6F5" opacity="0.9"/>
       <circle cx="-75" cy="55" r="20" fill="#E5D6F5" opacity="0.75"/>
