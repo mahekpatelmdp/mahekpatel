@@ -1,106 +1,46 @@
 <svg viewBox="0 0 1400 600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
   <defs>
-    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F3560"/>
-      <stop offset="100%" stop-color="#091F3C"/>
+    <linearGradient id="leftGrad02" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3560"/><stop offset="100%" stop-color="#091F3C"/>
     </linearGradient>
-    <radialGradient id="glow" cx="30%" cy="20%" r="75%">
-      <stop offset="0%" stop-color="#5FA8E8" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#5FA8E8" stop-opacity="0"/>
+    <radialGradient id="glow02" cx="30%" cy="20%" r="75%">
+      <stop offset="0%" stop-color="#5FA8E8" stop-opacity="0.35"/><stop offset="100%" stop-color="#5FA8E8" stop-opacity="0"/>
     </radialGradient>
   </defs>
-
   <rect x="0" y="0" width="1400" height="600" fill="#091F3C"/>
-  <rect x="0" y="0" width="630" height="600" fill="url(#leftGrad)"/>
-  <rect x="0" y="0" width="630" height="600" fill="url(#glow)"/>
-
-
-  <!-- icon -->
-  <g transform="translate(150,200) scale(0.8)">
-    <g>
-      <rect x="-100" y="-100" width="200" height="200" rx="36" fill="none" stroke="#C8E3FA" stroke-width="6" opacity="0.55"/>
-      <path d="M -75 10 L -35 10 L -18 -35 L 5 55 L 25 10 L 75 10"
-            fill="none" stroke="#C8E3FA" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-      <g transform="translate(50,-55)">
-        <rect x="-6" y="-22" width="12" height="44" rx="4" fill="#C8E3FA"/>
-        <rect x="-22" y="-6" width="44" height="12" rx="4" fill="#C8E3FA"/>
-      </g>
-    </g></g>
-
-  <!-- eyebrow -->
+  <rect x="0" y="0" width="630" height="600" fill="url(#leftGrad02)"/>
+  <rect x="0" y="0" width="630" height="600" fill="url(#glow02)"/>
+  <text x="40" y="150" font-size="130" font-weight="800" fill="#FFFFFF" opacity="0.08">02</text>
+  <g transform="translate(150,200) scale(0.8)"><g><rect x="-100" y="-100" width="200" height="200" rx="36" fill="none" stroke="#C8E3FA" stroke-width="6" opacity="0.55"/>
+      <path d="M -75 10 L -35 10 L -18 -35 L 5 55 L 25 10 L 75 10" fill="none" stroke="#C8E3FA" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <g transform="translate(50,-55)"><rect x="-6" y="-22" width="12" height="44" rx="4" fill="#C8E3FA"/><rect x="-22" y="-6" width="44" height="12" rx="4" fill="#C8E3FA"/></g></g></g>
   <text x="40" y="330" font-size="15" font-weight="700" letter-spacing="3" fill="#C8E3FA">HEALTHCARE</text>
-
-  <!-- title -->
   <text x="40" y="366" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">HEALTHCARE PREDICTIVE</text>
   <text x="40" y="400" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">MODELING &amp; EDA</text>
-
-  <!-- divider -->
-  <line x1="40" y1="424" x2="140" y2="424" stroke="#C8E3FA" stroke-width="3"/>
-
-  <!-- tools -->
-  <text x="40" y="452" font-size="13" fill="#FFFFFF" opacity="0.75" letter-spacing="0.3">Python   •   EDA   •   Predictive Modeling</text>
-
-  <!-- footer credit -->
-  <text x="40" y="548" font-size="12" font-weight="700" letter-spacing="2" fill="#C8E3FA" opacity="0.9">DATA ANALYTICS PORTFOLIO</text>
-  <text x="40" y="568" font-size="12" fill="#FFFFFF" opacity="0.6" letter-spacing="0.5">MAHEK</text>
-
-  
-    <rect x="630" y="0" width="770" height="600" fill="#EDEEF2"/>
+  <line x1="40" y1="424" x2="140" y2="424" stroke="#C8E3FA" stroke-width="3"/><rect x="40" y="444" width="63" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14" stroke="#C8E3FA" stroke-opacity="0.35" stroke-width="1"/>
+        <text x="72" y="461" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#C8E3FA" text-anchor="middle">Python</text><rect x="111" y="444" width="29" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14" stroke="#C8E3FA" stroke-opacity="0.35" stroke-width="1"/>
+        <text x="126" y="461" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#C8E3FA" text-anchor="middle">R</text><rect x="148" y="444" width="43" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14" stroke="#C8E3FA" stroke-opacity="0.35" stroke-width="1"/>
+        <text x="170" y="461" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#C8E3FA" text-anchor="middle">EDA</text><rect x="199" y="444" width="153" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14" stroke="#C8E3FA" stroke-opacity="0.35" stroke-width="1"/>
+        <text x="276" y="461" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#C8E3FA" text-anchor="middle">Predictive Modeling</text><rect x="630" y="0" width="770" height="600" fill="#EDEEF2"/>
     <rect x="630" y="0" width="770" height="66" fill="#FFFFFF"/>
     <line x1="630" y1="66" x2="1400" y2="66" stroke="#DADEE5" stroke-width="2"/>
     <rect x="658" y="20" width="26" height="26" rx="6" fill="#5FA8E8"/>
-    <text x="696" y="39" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#20242C" letter-spacing="0.5">HEALTHCARE RISK &amp; OUTCOMES DASHBOARD</text>
-    
-        <rect x="658.0" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+    <text x="696" y="39" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#20242C" letter-spacing="0.5">HEALTHCARE RISK &amp; OUTCOMES DASHBOARD</text><rect x="1297" y="21" width="75" height="24" rx="12" fill="#DCEBFB"/>
+        <text x="1334" y="37" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#1D4E89" text-anchor="middle" letter-spacing="0.3">87% AUC</text><rect x="658.0" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
         <text x="674.0" y="126" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#1D4E89">5,200</text>
-        <text x="674.0" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">PATIENT RECORDS</text>
-        
-        <rect x="901.3333333333334" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
-        <text x="917.3333333333334" y="126" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#1D4E89">87%</text>
-        <text x="917.3333333333334" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">MODEL ACCURACY</text>
-        
-        <rect x="1144.6666666666667" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
-        <text x="1160.6666666666667" y="126" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#1D4E89">14</text>
-        <text x="1160.6666666666667" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">KEY PREDICTORS</text>
-        
-    <rect x="658" y="186" width="349.0" height="200" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
-    <text x="674" y="212" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">RISK FACTOR DISTRIBUTION</text>
-    
-        <text x="674" y="241.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#5B6270">BMI</text>
-        <rect x="754" y="230.0" width="257" height="14" rx="4" fill="#5FA8E8" opacity="1.00"/>
-        
-        <text x="674" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#5B6270">Blood Pressure</text>
-        <rect x="754" y="260.0" width="239" height="14" rx="4" fill="#5FA8E8" opacity="0.96"/>
-        
-        <text x="674" y="301.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#5B6270">Age</text>
-        <rect x="754" y="290.0" width="216" height="14" rx="4" fill="#5FA8E8" opacity="0.91"/>
-        
-        <text x="674" y="331.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#5B6270">Glucose</text>
-        <rect x="754" y="320.0" width="201" height="14" rx="4" fill="#5FA8E8" opacity="0.88"/>
-        
-        <text x="674" y="361.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#5B6270">Activity</text>
-        <rect x="754" y="350.0" width="151" height="14" rx="4" fill="#5FA8E8" opacity="0.78"/>
-        
-    <rect x="1023.0" y="186" width="349.0" height="200" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
-    <text x="1039.0" y="212" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">PREDICTED VS ACTUAL</text>
-    
-    <polyline points="1043,360 1043,360 1087,324 1131,334 1175,288 1220,304 1264,268 1308,247 1352,232 1352,360" fill="#5FA8E8" opacity="0.14"/>
-    <polyline points="1043,360 1087,324 1131,334 1175,288 1220,304 1264,268 1308,247 1352,232" fill="none" stroke="#5FA8E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="1043" cy="360" r="3.4" fill="#1D4E89"/><circle cx="1087" cy="324" r="3.4" fill="#1D4E89"/><circle cx="1131" cy="334" r="3.4" fill="#1D4E89"/><circle cx="1175" cy="288" r="3.4" fill="#1D4E89"/><circle cx="1220" cy="304" r="3.4" fill="#1D4E89"/><circle cx="1264" cy="268" r="3.4" fill="#1D4E89"/><circle cx="1308" cy="247" r="3.4" fill="#1D4E89"/><circle cx="1352" cy="232" r="3.4" fill="#1D4E89"/>
-    <rect x="658" y="402" width="714" height="174" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
-    <text x="674" y="426" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">TOP PREDICTIVE FEATURES</text>
-    <line x1="658" y1="436" x2="1372" y2="436" stroke="#EDEEF2" stroke-width="1.5"/>
-    
-        <text x="674" y="463" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#454B57">1.  Blood Glucose Level</text>
-        <text x="1356" y="463" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#1D4E89" text-anchor="end">0.31</text>
-        
-        <text x="674" y="496" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#454B57">2.  BMI</text>
-        <text x="1356" y="496" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#1D4E89" text-anchor="end">0.24</text>
-        
-        <text x="674" y="530" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#454B57">3.  Age</text>
-        <text x="1356" y="530" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#1D4E89" text-anchor="end">0.19</text>
-        
-        <text x="674" y="563" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#454B57">4.  Systolic BP</text>
-        <text x="1356" y="563" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#1D4E89" text-anchor="end">0.14</text>
-        
-</svg>
+        <text x="674.0" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">PATIENT RECORDS</text><rect x="901.3333333333334" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+        <text x="917.3333333333334" y="126" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#1D4E89">14</text>
+        <text x="917.3333333333334" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">KEY PREDICTORS</text><rect x="1144.6666666666667" y="92" width="227.33333333333334" height="78" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+        <text x="1160.6666666666667" y="126" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#1D4E89">0.87</text>
+        <text x="1160.6666666666667" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#5B6270" letter-spacing="0.3">AUC SCORE</text><rect x="658" y="186" width="714" height="210" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+    <text x="674" y="210" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">PREDICTED VS ACTUAL RISK SCORE — TEST SET</text><text x="1358" y="210" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9096A2" text-anchor="end">n = 1,040</text><line x1="692" y1="372" x2="1354" y2="372" stroke="#DDE0E6" stroke-width="1.5"/><line x1="692" y1="372" x2="692" y2="234" stroke="#DDE0E6" stroke-width="1.5"/><line x1="692" y1="372" x2="1354" y2="234" stroke="#5FA8E8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.45"/><circle cx="931" cy="335" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1120" cy="298" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1054" cy="301" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="778" cy="354" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="767" cy="359" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="785" cy="365" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="989" cy="298" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="816" cy="356" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1106" cy="270" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1077" cy="295" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1307" cy="260" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1239" cy="265" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="828" cy="357" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="923" cy="313" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="849" cy="336" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1113" cy="289" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1060" cy="311" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="779" cy="364" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1137" cy="282" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="926" cy="320" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1006" cy="314" r="5" fill="#5FA8E8" opacity="0.8"/><circle cx="1202" cy="258" r="5" fill="#5FA8E8" opacity="0.8"/><text x="1023.0" y="392" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#9096A2" text-anchor="middle" letter-spacing="0.5">ACTUAL</text><text x="670" y="230" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#9096A2" letter-spacing="0.5">PREDICTED</text><rect x="658" y="412" width="260" height="164" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+    <text x="674" y="436" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">MODEL ACCURACY</text><path d="M 720.0 546 A 68 68 0 0 1 856.0 546" fill="none" stroke="#EEF0F3" stroke-width="16" stroke-linecap="round"/><path d="M 720.0 546 A 68 68 0 0 1 856.0 546" fill="none" stroke="#5FA8E8" stroke-width="16"
+        stroke-linecap="round" stroke-dasharray="185.9 27.8"/><text x="788.0" y="532" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#22262E" text-anchor="middle">87%</text><text x="788.0" y="556" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8A8F99" text-anchor="middle" letter-spacing="0.3">MODEL ACCURACY</text><rect x="934" y="412" width="438" height="164" rx="10" fill="#FFFFFF" stroke="#E0E3E9" stroke-width="1.5"/>
+    <text x="950" y="436" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#3A3F4B" letter-spacing="0.3">KEY PREDICTIVE FEATURES</text><rect x="950" y="450" width="99" height="24" rx="12" fill="#C8E3FA"/>
+        <text x="1000" y="466" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#1D4E89" text-anchor="middle">Blood Glucose</text><rect x="1057" y="450" width="38" height="24" rx="12" fill="#C8E3FA"/>
+        <text x="1076" y="466" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#1D4E89" text-anchor="middle">BMI</text><rect x="1103" y="450" width="38" height="24" rx="12" fill="#EEF0F3"/>
+        <text x="1123" y="466" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#4A4F5A" text-anchor="middle">Age</text><rect x="1150" y="450" width="87" height="24" rx="12" fill="#EEF0F3"/>
+        <text x="1193" y="466" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#4A4F5A" text-anchor="middle">Systolic BP</text><rect x="1245" y="450" width="87" height="24" rx="12" fill="#EEF0F3"/>
+        <text x="1288" y="466" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#4A4F5A" text-anchor="middle">Cholesterol</text><rect x="950" y="484" width="105" height="24" rx="12" fill="#EEF0F3"/>
+        <text x="1003" y="501" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#4A4F5A" text-anchor="middle">Activity Level</text><rect x="1063" y="484" width="105" height="24" rx="12" fill="#EEF0F3"/>
+        <text x="1116" y="501" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#4A4F5A" text-anchor="middle">Smoking Status</text></svg>

@@ -17,7 +17,13 @@
 
 @media (min-width: 1024px) {
     .skills-columns {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .skills-columns {
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .skills-column:not(:last-child) {

@@ -13,8 +13,8 @@ const HeroBanner = () => {
         </h1>
 
         <p className="hero-tagline">
-          I help businesses uncover <span className="accent">insights</span>
-          <br className="hidden lg:block" /> and turn data into <span className="accent">decisions</span>.
+          I find the <span className="accent">patterns</span> hiding in data
+          <br className="hidden lg:block" /> and turn them into <span className="accent">decisions</span>.
         </p>
 
         <div className="hero-actions">

@@ -6,6 +6,8 @@ import {
   SiMicrosoftexcel,
   SiGooglesheets,
   SiGooglebigquery,
+  SiSnowflake,
+  SiSap,
   SiVisualstudiocode,
   SiSalesforce,
   SiJira,
@@ -13,6 +15,7 @@ import {
   SiTableau,
   SiLooker,
 } from 'react-icons/si';
+import { FaRobot, FaComments } from 'react-icons/fa';
 import SectionBadge from '../UI/SectionBadge';
 import Reveal from '../UI/Reveal';
 
@@ -35,9 +38,13 @@ const SKILL_COLUMNS = [
       { icon: <SiMicrosoftexcel />, label: 'Microsoft Excel (VBA)' },
       { icon: <SiGooglesheets />, label: 'Google Sheets' },
       { icon: <SiGooglebigquery />, label: 'Google BigQuery' },
+      { icon: <SiSnowflake />, label: 'Snowflake' },
+      { icon: <SiSap />, label: 'SAP' },
       { icon: <SiVisualstudiocode />, label: 'Visual Studio Code' },
       { icon: <SiSalesforce />, label: 'Salesforce CRM' },
       { icon: <SiJira />, label: 'JIRA' },
+      { icon: <FaRobot />, label: 'LLM Tools' },
+      { icon: <FaComments />, label: 'Claude' },
     ],
   },
   {
@@ -55,6 +62,7 @@ const SKILL_COLUMNS = [
     titleAccent: 'Methods',
     type: 'list',
     items: [
+      'Business Analysis',
       'EDA',
       'Segmentation / Clustering',
       'Cohort Analysis',
@@ -62,9 +70,26 @@ const SKILL_COLUMNS = [
       'Logistic Regression',
       'A/B Testing',
       'ANOVA & (Post-Hoc) T-Test',
+      'Statistical Analysis',
       'Root Cause Analysis',
-      'Data Validation & ETL',
+      'Data Modeling',
+      'ETL',
+      'Data Validation',
       'Data Mining (SAS Enterprise Miner)',
+    ],
+  },
+  {
+    title: 'Health',
+    titleAccent: 'Informatics',
+    type: 'list',
+    items: [
+      'EHR / EMR Systems',
+      'HL7 & FHIR Interoperability',
+      'Health Information Exchange (HIE)',
+      'HIPAA & Patient Data Privacy',
+      'Healthcare System Analysis & Design',
+      'Telehealth / Digital Health Platforms',
+      'Clinical Data Management',
     ],
   },
 ];
