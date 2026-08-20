@@ -1,18 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+/* ---- light theme (default) ---- */
 :root {
-    --navy-950: #080b0d;
-    --navy-900: #12181c;
-    --navy-800: #1a2226;
-    --navy-700: #222b30;
-    --navy-600: #2b363c;
-    --gold-300: #a8f0e4;
-    --gold-400: #45ddc7;
-    --gold-500: #2dd4bf;
-    --gold-600: #22a396;
+    --navy-950: #eef1f4;
+    --navy-900: #ffffff;
+    --navy-800: #f4f6f8;
+    --navy-700: #e8ebee;
+    --navy-600: #d9dee2;
+    --gold-300: #a6ecdf;
+    --gold-400: #12876f;
+    --gold-500: #0d715c;
+    --gold-600: #095846;
+
+    --text-primary: #14181c;
+    --text-secondary: #4b535c;
+    --text-tertiary: #737b85;
+
+    --border-color: rgba(20, 24, 28, 0.1);
+    --border-color-strong: rgba(20, 24, 28, 0.18);
+    --surface-tint: rgba(20, 24, 28, 0.035);
+    --surface-navbar: rgba(255, 255, 255, 0.75);
+}
+
+/* ---- dark theme (opt-in via toggle) ---- */
+:root[data-theme='dark'] {
+    --navy-950: #0a0d10;
+    --navy-900: #10141a;
+    --navy-800: #171d24;
+    --navy-700: #1f262e;
+    --navy-600: #2a323c;
+    --gold-300: #7fd9c4;
+    --gold-400: #2bbfa3;
+    --gold-500: #189e85;
+    --gold-600: #12795f;
+
+    --text-primary: #edf0f3;
+    --text-secondary: #a3aab5;
+    --text-tertiary: #767e89;
+
+    --border-color: rgba(237, 240, 243, 0.08);
+    --border-color-strong: rgba(237, 240, 243, 0.16);
+    --surface-tint: rgba(237, 240, 243, 0.045);
+    --surface-navbar: rgba(10, 13, 16, 0.72);
 }
 
 html {
@@ -35,9 +67,10 @@ html, body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--navy-900);
-    color: #f4f4f8;
+    color: var(--text-primary);
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 * {
@@ -61,32 +94,42 @@ body {
     transform: translateY(0);
 }
 
-/* ---- pill badge used above each section heading ---- */
+/* ---- label used above each section heading ---- */
 .section-badge {
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
     max-width: 100%;
-    padding: 8px 20px;
-    border: 1.5px solid var(--gold-500);
-    border-radius: 999px;
-    color: var(--gold-400);
+    padding-left: 18px;
+    color: var(--text-tertiary);
     font-weight: 600;
     font-size: 0.78rem;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     text-align: center;
+    position: relative;
+}
+
+.section-badge::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 2px;
+    background: var(--gold-500);
 }
 
 @media (min-width: 480px) {
     .section-badge {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
     }
 }
 
 .section-badge .badge-highlight {
-    color: #f4f4f8;
+    color: var(--text-primary);
     font-weight: 700;
 }

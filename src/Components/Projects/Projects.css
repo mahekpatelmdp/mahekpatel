@@ -1,12 +1,14 @@
-.projects-section {
-    max-width: 1280px;
-    margin: 0 auto;
+.projects-wrapper {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .projects-grid {
+    margin-top: 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.75rem;
+    gap: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -15,14 +17,19 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 .project-card {
     --accent: var(--gold-500);
     background: var(--navy-800);
-    border: 1px solid rgba(244, 244, 248, 0.08);
-    border-top: 3px solid var(--accent);
-    border-radius: 16px;
-    padding: 1.75rem;
+    border: 1px solid var(--border-color);
+    border-top: 2px solid var(--accent);
+    border-radius: 12px;
+    padding: 1.4rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -30,10 +37,10 @@
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    border-color: color-mix(in srgb, var(--accent) 55%, rgba(244, 244, 248, 0.08));
+    transform: translateY(-4px);
+    border-color: var(--border-color-strong);
     border-top-color: var(--accent);
-    box-shadow: 0 16px 40px -20px var(--accent);
+    box-shadow: 0 16px 32px -18px rgba(0, 0, 0, 0.55);
 }
 
 .project-banner {
@@ -58,9 +65,9 @@
 }
 
 .project-title {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    color: #f4f4f8;
+    color: var(--text-primary);
     margin-bottom: 0.9rem;
     line-height: 1.35;
 }
@@ -68,12 +75,12 @@
 .project-line {
     font-size: 0.87rem;
     line-height: 1.6;
-    color: #cfd0e0;
+    color: var(--text-secondary);
     margin-bottom: 0.65rem;
 }
 
 .project-line strong {
-    color: #f4f4f8;
+    color: var(--text-primary);
 }
 
 .project-tools {
@@ -85,18 +92,18 @@
 }
 
 .tool-chip {
-    background: rgba(244, 244, 248, 0.06);
-    border: 1px solid rgba(244, 244, 248, 0.12);
-    color: #cfd0e0;
+    background: var(--surface-tint);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
     font-size: 0.75rem;
     font-weight: 500;
     padding: 0.3rem 0.7rem;
-    border-radius: 999px;
+    border-radius: 6px;
     transition: border-color 0.2s ease;
 }
 
 .project-card:hover .tool-chip {
-    border-color: color-mix(in srgb, var(--accent) 40%, rgba(244, 244, 248, 0.12));
+    border-color: rgba(24, 158, 133, 0.3);
 }
 
 .project-file-link {

@@ -15,9 +15,12 @@ import {
   SiTableau,
   SiLooker,
 } from 'react-icons/si';
-import { FaRobot, FaComments } from 'react-icons/fa';
+import { FaRobot } from 'react-icons/fa';
+import { BsStars } from 'react-icons/bs';
 import SectionBadge from '../UI/SectionBadge';
 import Reveal from '../UI/Reveal';
+import Certifications from '../About/Certifications';
+import Projects from './Projects';
 
 const TOOLS = [
   { icon: <SiMysql />, label: 'SQL' },
@@ -35,7 +38,7 @@ const TOOLS = [
   { icon: <SiPowerbi />, label: 'Power BI' },
   { icon: <SiLooker />, label: 'Looker Studio' },
   { icon: <FaRobot />, label: 'LLM Tools' },
-  { icon: <FaComments />, label: 'Claude' },
+  { icon: <BsStars />, label: 'Claude' },
 ];
 
 const METHODS = [
@@ -67,12 +70,12 @@ const HEALTHCARE = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills-section px-6 lg:px-16 py-24">
+    <section id="skills" className="skills-section px-6 lg:px-16 py-16 lg:py-20">
       <Reveal>
         <SectionBadge label="Technical" highlight="Skills" />
       </Reveal>
 
-      <div className="skills-groups mt-14">
+      <div className="skills-groups mt-10">
         <Reveal className="skills-group">
           <h3>Tools &amp; <span className="accent">Technologies</span></h3>
           <div className="skills-chip-grid">
@@ -103,6 +106,9 @@ const Skills = () => {
           </div>
         </Reveal>
       </div>
+
+      <Certifications />
+      <Projects />
     </section>
   );
 };

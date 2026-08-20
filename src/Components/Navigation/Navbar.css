@@ -2,10 +2,38 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: rgba(10, 10, 36, 0.85);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(45, 212, 191, 0.15);
+    gap: 24px;
+    background: var(--surface-navbar);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 24px rgba(0, 0, 0, 0.18);
     min-height: 64px;
+}
+
+.site-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.theme-toggle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color-strong);
+    background: transparent;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    border-color: var(--gold-500);
+    color: var(--gold-400);
+    transform: translateY(-2px);
 }
 
 .navigation-items {
@@ -28,7 +56,7 @@
 }
 
 .nav-links {
-    color: #cfd0e0;
+    color: var(--text-secondary);
     text-decoration: none;
     padding: 6px 4px;
     transition: color 0.2s;
@@ -43,7 +71,7 @@
 }
 
 .hamburger-menu {
-    color: #f4f4f8;
+    color: var(--text-primary);
     font-size: 1.4rem;
     background: none;
     border: none;
@@ -55,7 +83,7 @@
 }
 
 .modal-close {
-    color: #f4f4f8;
+    color: var(--text-primary);
     font-size: 1.5rem;
     background: none;
     border: none;

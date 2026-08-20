@@ -3,7 +3,6 @@ import {
   createBrowserRouter,
   Outlet,
   RouterProvider,
-  ScrollRestoration,
   Navigate,
 } from 'react-router-dom';
 import Homepage from './pages/Homepage';
@@ -17,7 +16,6 @@ function App() {
       path: '/',
       element: (
         <>
-          <ScrollRestoration />
           <NavBar />
           <Outlet />
           <Footer />
@@ -25,7 +23,6 @@ function App() {
       ),
       errorElement: (
         <>
-          <ScrollRestoration />
           <NavBar />
           <Error404 />
           <Footer />

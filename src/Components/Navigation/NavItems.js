@@ -2,10 +2,8 @@ import NavigationLink from './NavigationLink';
 
 const NAV_LINKS = [
   { name: 'Home', link: '#home' },
-  { name: 'About Me', link: '#about' },
   { name: 'Skills', link: '#skills' },
   { name: 'Background', link: '#background' },
-  { name: 'Projects', link: '#projects' },
   { name: 'Contact', link: '#contact' },
 ];
 

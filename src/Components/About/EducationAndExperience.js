@@ -1,7 +1,7 @@
 import './EducationAndExperience.css';
 import Timeline from '../UI/Timeline';
 import Reveal from '../UI/Reveal';
-import { FaGraduationCap, FaTooth, FaRobot, FaFlask, FaBriefcase } from 'react-icons/fa';
+import { FaGraduationCap, FaTooth, FaRobot, FaFlask, FaBriefcase, FaChartLine } from 'react-icons/fa';
 
 const EDUCATION = [
   {
@@ -50,22 +50,44 @@ const EDUCATION = [
 
 const EXPERIENCE = [
   {
+    icon: <FaChartLine />,
+    title: 'Data Analyst',
+    subtitle: 'Freelancer · Self-employed',
+    duration: 'Jan 2026 - Present',
+    bullets: [
+      'Delivered data-driven analysis to inform strategic decision-making for small business clients across multiple industries.',
+      'Built interactive dashboards and financial reporting tools, surfacing actionable insights on pricing strategy, process optimization, and report automation to drive operational efficiency.',
+    ],
+  },
+  {
     icon: <FaRobot />,
-    title: 'AI Training Specialist & Data Analyst',
-    subtitle: 'Outlier AI, Vancouver, BC',
-    summary: 'Validated AI-generated outputs and developed validation rules that improved data accuracy and output quality by 20% through root cause analysis.',
+    title: 'AI Training Specialist',
+    subtitle: 'Outlier',
+    duration: '2026 – Present',
+    bullets: [
+      'Led data quality workflows for complex multimodal datasets, identifying and resolving defects through human-in-the-loop annotation frameworks.',
+      'Designed and implemented QA protocols and standardized documentation practices, improving data accuracy, consistency, and reporting integrity across projects.',
+    ],
   },
   {
     icon: <FaFlask />,
     title: 'Research Coordinator',
     subtitle: 'University of Illinois Springfield',
-    summary: 'Conducted predictive modeling and exploratory data analysis on adoption datasets, applying statistical techniques to identify trends and generate actionable insights.',
+    duration: 'Jan 2025 - Oct 2025',
+    bullets: [
+      'Oversaw end-to-end data collection, analysis, and database management, ensuring accuracy and integrity of research documentation.',
+      'Partnered with faculty and cross-functional teams to advance ongoing studies, delivering reports and presentations that communicated key research findings.',
+    ],
   },
   {
     icon: <FaBriefcase />,
     title: 'Business Analyst',
-    subtitle: 'Santram Pharma Pvt. Ltd., India',
-    summary: 'Wrote SQL queries and built Tableau/Power BI dashboards tracking sales, pipeline, and revenue, while connecting Salesforce CRM data into centralized reporting and leading the monthly KPI reporting cycle for leadership.',
+    subtitle: 'Santram Pharma Pvt Ltd, India',
+    duration: 'Sep 2023 - Jan 2025',
+    bullets: [
+      'Analyzed business data and developed reports and dashboards to track key metrics and support decision-making.',
+      'Identified process improvements and collaborated with cross-functional teams to gather requirements and improve operational efficiency.',
+    ],
   },
 ];
 

@@ -1,61 +1,42 @@
 .certifications-wrapper {
-    margin-top: 4.5rem;
-    padding-top: 3rem;
-    border-top: 1px solid rgba(244, 244, 248, 0.1);
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
-.certifications-heading {
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: var(--gold-500);
-    margin-bottom: 2rem;
-}
-
-.certs-marquee {
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
-    mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
-}
-
-.certs-track {
-    display: flex;
-    width: max-content;
-    gap: 1.25rem;
-    animation: certs-scroll 50s linear infinite;
-}
-
-.certs-marquee:hover .certs-track {
-    animation-play-state: paused;
-}
-
-@keyframes certs-scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+.certs-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.65rem;
 }
 
 .cert-card {
-    flex: 0 0 auto;
-    width: 280px;
     display: flex;
-    align-items: flex-start;
-    gap: 0.85rem;
+    align-items: center;
+    gap: 0.65rem;
     background: var(--navy-800);
-    border: 1px solid rgba(244, 244, 248, 0.08);
-    border-radius: 14px;
-    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.7rem 0.85rem;
+    transition: border-color 0.2s ease;
+}
+
+.cert-card:hover {
+    border-color: rgba(24, 158, 133, 0.4);
 }
 
 .cert-icon {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
     border-radius: 50%;
-    background: rgba(45, 212, 191, 0.12);
-    color: var(--gold-500);
+    background: rgba(24, 158, 133, 0.12);
+    color: var(--gold-400);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.05rem;
+    font-size: 0.88rem;
 }
 
 .cert-body {
@@ -63,15 +44,15 @@
 }
 
 .cert-title {
-    font-size: 0.88rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    color: #f4f4f8;
-    line-height: 1.4;
+    color: var(--text-primary);
+    line-height: 1.35;
 }
 
 .cert-issuer {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     color: var(--gold-400);
     font-weight: 600;
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
 }

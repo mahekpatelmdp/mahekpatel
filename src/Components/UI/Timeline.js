@@ -24,12 +24,10 @@ const Timeline = ({ icon, title, subtitle, duration, summary, bullets, courses, 
         )}
 
         {courses?.length > 0 && (
-          <div className="courses-marquee">
-            <div className="courses-track">
-              {[...courses, ...courses].map((course, idx) => (
-                <span className="course-chip" key={`${course}-${idx}`}>{course}</span>
-              ))}
-            </div>
+          <div className="courses-track">
+            {courses.map((course) => (
+              <span className="course-chip" key={course}>{course}</span>
+            ))}
           </div>
         )}
       </div>

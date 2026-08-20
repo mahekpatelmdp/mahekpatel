@@ -6,12 +6,12 @@
 .skills-groups {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.75rem;
 }
 
 .skills-group {
-    padding-bottom: 3rem;
-    border-bottom: 1px solid rgba(244, 244, 248, 0.08);
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .skills-group:last-child {
@@ -20,10 +20,10 @@
 }
 
 .skills-group h3 {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
     font-weight: 700;
-    color: #f4f4f8;
-    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
 }
 
 .skills-group h3 .accent {
@@ -42,31 +42,30 @@
     align-items: center;
     gap: 0.6rem;
     background: var(--navy-800);
-    border: 1px solid rgba(244, 244, 248, 0.1);
-    border-radius: 999px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     padding: 0.45rem 1rem 0.45rem 0.45rem;
-    color: #e4e4ee;
+    color: var(--text-primary);
     font-size: 0.88rem;
     font-weight: 500;
-    transition: border-color 0.2s ease, transform 0.2s ease;
+    transition: border-color 0.2s ease;
 }
 
 .skills-chip:hover {
-    border-color: var(--gold-500);
-    transform: translateY(-2px);
+    border-color: rgba(24, 158, 133, 0.45);
 }
 
 .skills-chip-icon {
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    border-radius: 50%;
-    background: var(--gold-500);
-    color: var(--navy-900);
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: 6px;
+    background: rgba(24, 158, 133, 0.14);
+    color: var(--gold-400);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 /* ---- methods / healthcare: plain tag cloud ---- */
@@ -77,17 +76,17 @@
 }
 
 .skills-tag {
-    background: rgba(244, 244, 248, 0.05);
-    border: 1px solid rgba(244, 244, 248, 0.12);
-    border-radius: 999px;
-    padding: 0.5rem 1.1rem;
-    color: #cfd0e0;
-    font-size: 0.85rem;
+    background: var(--surface-tint);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.4rem 0.9rem;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
     font-weight: 500;
     transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .skills-tag:hover {
-    border-color: var(--gold-500);
-    color: #f4f4f8;
+    border-color: rgba(24, 158, 133, 0.45);
+    color: var(--text-primary);
 }

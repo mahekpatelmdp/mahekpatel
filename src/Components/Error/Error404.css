@@ -2,7 +2,7 @@
     margin-top: 50px;
     padding: 25px 25px 80px;
     min-height: 60vh;
-    color: #f4f4f8;
+    color: var(--text-primary);
 }
 
 .error-404-title {
@@ -12,7 +12,7 @@
 }
 
 .error-404-contents p {
-    color: #9a9bc0;
+    color: var(--text-tertiary);
     margin-top: 0.5rem;
 }
 

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import NavItems from './NavItems';
 import { Modal } from '../UI/Modal';
 import { CgClose } from 'react-icons/cg';
+import ThemeToggle from '../UI/ThemeToggle';
 
 const NavBar = () => {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
@@ -15,9 +16,13 @@ const NavBar = () => {
     <header className="site-header sticky top-0 z-50 px-6 lg:px-10 py-4">
       <NavItems modalNavigation={false} />
 
-      <button className="hamburger-menu" onClick={showNavigationModalHandler} aria-label="Open menu">
-        <GiHamburgerMenu />
-      </button>
+      <div className="site-header-actions">
+        <ThemeToggle />
+
+        <button className="hamburger-menu" onClick={showNavigationModalHandler} aria-label="Open menu">
+          <GiHamburgerMenu />
+        </button>
+      </div>
 
       {isNavigationOpen && (
         <Modal onClose={hideNavigationModalHandler}>

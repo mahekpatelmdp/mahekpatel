@@ -1,6 +1,8 @@
 import './Certifications.css';
 import { SiGoogle, SiMicrosoft, SiIbm, SiSalesforce } from 'react-icons/si';
 import { FaUniversity, FaFlask, FaClinicMedical, FaAward } from 'react-icons/fa';
+import SectionBadge from '../UI/SectionBadge';
+import Reveal from '../UI/Reveal';
 
 const ISSUER_ICON = {
   'Illinois Tech': <FaUniversity />,
@@ -44,14 +46,14 @@ const CertCard = ({ cert }) => (
 const Certifications = () => {
   return (
     <div className="certifications-wrapper">
-      <h3 className="certifications-heading">Certifications</h3>
+      <Reveal>
+        <SectionBadge label="Certifications" />
+      </Reveal>
 
-      <div className="certs-marquee">
-        <div className="certs-track">
-          {[...CERTIFICATIONS, ...CERTIFICATIONS].map((cert, idx) => (
-            <CertCard cert={cert} key={`${cert.title}-${idx}`} />
-          ))}
-        </div>
+      <div className="certs-grid">
+        {CERTIFICATIONS.map((cert) => (
+          <CertCard cert={cert} key={cert.title} />
+        ))}
       </div>
     </div>
   );
